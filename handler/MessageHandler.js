@@ -109,12 +109,12 @@ module.exports = async (client, m, commands, chatUpdate) => {
         : [];
     const flags = args.filter((arg) => arg.startsWith("--"));
     if (body.startsWith(prefix) && !icmd) {
-      var rae = `https://i.ibb.co/c33ZHCx/wallpaperflare-com-wallpaper.jpg`;
-      let txtt = `*${prefix}${cmdName}* is an ⛔ invalid command`;
+      var rae = `https://i.pinimg.com/236x/5e/be/96/5ebe96e2552c27f10daa765e202292bd.jpg`;
+      let txtt = `*${prefix}${cmdName}* is an invalid command TYPE ${prefix}Hope `;
       let buttons = [
         {
           buttonId: `${prefix}help`,
-          buttonText: { displayText: "⚙️ℍ𝕖𝕝𝕡" },
+          buttonText: { displayText: "ɢᴇᴛ ᴜᴘ" },
           type: 1,
         },
       ];
@@ -122,7 +122,7 @@ module.exports = async (client, m, commands, chatUpdate) => {
       let buttonMessage = {
         image: { url: rae },
         caption: `${txtt}`,
-        footer: `*©Eternity-Team*`,
+        footer: `*𝙷𝚊𝚛𝚛𝚒𝚜𝚘𝚗 𝚆𝚎𝚕𝚕𝚜*`,
         buttons: buttons,
         headerType: 4,
       };
@@ -168,9 +168,9 @@ module.exports = async (client, m, commands, chatUpdate) => {
     if (isGroup && mods.includes(`${m.from}`)) {
       if (body.includes("://chat.whatsapp.com/")) {
         if (iscreator) {
-          return m.reply("*Ohhh you are mod*");
+          return m.reply("*Ohhh you are MOD*");
         } else if (isAdmin) {
-          return m.reply("*Ohhh you are admin*");
+          return m.reply("*Ohhh you are ADMIN*");
         } else {
           await client.groupParticipantsUpdate(m.from, [m.sender], "remove");
         }
@@ -201,14 +201,14 @@ module.exports = async (client, m, commands, chatUpdate) => {
       ];
       let buth = {
         text: `*Command Info*\n\n${data.join("\n")}`,
-        footer: "Eternity",
+        footer: "𝙷𝚊𝚛𝚛𝚒𝚜𝚘𝚗 𝚆𝚎𝚕𝚕𝚜",
         buttons: buttonss,
         headerType: 1,
       };
       return client.sendMessage(m.from, buth, { quoted: m });
     }
     if (!isGroup && cmd && !iscreator)
-      return m.reply("*You cant use commands in dm*");
+      return m.reply("*You cant use commands in DM*");
     if (cmd) {
       if (ban.includes(`${m.sender}`))
         return m.reply(`You are banned from using commands ❌`);
