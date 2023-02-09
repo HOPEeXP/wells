@@ -1,10 +1,10 @@
 require ('../../../settings')
 module.exports = {
 	name: "ping",
-	alias: ["tagall"],
+	alias: ["tagall","tt"],
 	desc: "Tags all the members",
     usage:`${prefa}ping / =ping <text>`,
-    react:"✅",
+    react:"✨",
 	category: "Group",
 	start: async(client, m, { text, groupName,flags, args,command,isAdmin,participants,groupAdmin,pushName,iscreator}) => {
 		if(!isAdmin) return client.sendMessage(m.from,{text:"This is admin only command"},{quoted:m})
