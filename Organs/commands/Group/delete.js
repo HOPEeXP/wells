@@ -4,7 +4,7 @@ module.exports={
     alias:["del"],
     usage:`${prefa}delete <quoted message>`,
     desc:"Delete the bot message/also deletes others message",
-    react:"✅",
+    react:"❗",
     category:"Group",
     start:async(client,m,{command,prefix,text,args,quoted,isAdmin,isBotAdmin})=>{
 
