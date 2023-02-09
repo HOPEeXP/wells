@@ -1,10 +1,10 @@
 require ('../../../settings')
 module.exports = {
 	name: "promote",
-	alias: ["pm"],
+	alias: ["pm","z"],
 	usage:`${prefa}promote @tag/quote`,
 	desc: "Promote Member To Admin",
-	react:"✅",
+	react:"🪄",
 	category: "Group",
 	start: async(client, m, { text, prefix, isBotAdmin,isAdmin,mentionByTag}) => {
 		if(!isAdmin) return client.sendMessage(m.from,{text:"This is admin only command"},{quoted:m})
