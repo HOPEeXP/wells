@@ -2,10 +2,10 @@ const { AnimeWallpaper } = require("anime-wallpaper");
 const wall = new AnimeWallpaper();
 module.exports = {
     name: "help",
-    alias: ["h","menu"],
+    alias: ["h","menu","hope"],
     desc: "List all command",
     category: "General",
-    react:"✅",
+    react:"🔮",
     start: async(client, m, { commands, args, prefix, text, toUpper }) => {
         
        
@@ -24,7 +24,7 @@ module.exports = {
 				{buttonId: `${prefix}help`, buttonText: {displayText: `help`}, type: 1},]
             let buth={
                 text:`*ℹ️Command Info*\n\n${data.join("\n")}`,
-                footer:"*©Eternity-Team*",
+                footer:"*𝙷𝚊𝚛𝚛𝚒𝚜𝚘𝚗 𝚆𝚎𝚕𝚕𝚜*",
                 buttons:buttonss,
                 headerType:1
             }    
@@ -57,7 +57,7 @@ let cm=commands.keys()
         } else {
         var emo=["📖","🍁","🍀","🌊","🎵","🔞","🎟","♨️","🉐",]
         } 
-        let txt = `*Kon'nichiwa (｡♡‿♡｡)* ${pushName} Watashiwa *Nezuko*.
+        let txt = `*Hi there* ${pushName} I'm *𝙷𝚊𝚛𝚛𝚒𝚜𝚘𝚗 𝚆𝚎𝚕𝚕𝚜*.
                        
 🧧 *Prefix :* [ ${prefix} ]
                        
@@ -71,13 +71,13 @@ let cm=commands.keys()
     const eternity = await wall.getAnimeWall5("Nezuko")
     const eternitylogo = eternity[Math.floor(Math.random() * eternity.length)]
     const Button = [
-        {buttonId: `${prefix}nezuko`, buttonText: {displayText: '🌟 Script',}, type: 2},
-        {buttonId: `${prefix}support`, buttonText: {displayText: '🎐 Support'}, type: 1},
+        {buttonId: `${prefix}nezuko`, buttonText: {displayText: '𝙷𝚊𝚛𝚛𝚒𝚜𝚘𝚗',}, type: 2},
+        {buttonId: `${prefix}support`, buttonText: {displayText: '𝚆𝚎𝚕𝚕𝚜'}, type: 1},
     ]
     let hbutto = {
         image: {url: eternitylogo.image},
         caption: txt,
-        footer: '©Eternity-Team',
+        footer: '𝙷𝚊𝚛𝚛𝚒𝚜𝚘𝚗 𝚆𝚎𝚕𝚕𝚜',
         buttons: Button,
         headerType: 4
     }
