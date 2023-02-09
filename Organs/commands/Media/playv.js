@@ -5,11 +5,11 @@ const yts= require("yt-search")
 require ('../../../settings')
 module.exports={
     name:"playv",
-    alias:["video"],
+    alias:["video","mp4"],
     usage:`${prefa}playv <query>`,
     desc:"Plays the video...",
     category:"Media",
-    react:"✅",
+    react:"▶️",
     start:async(client,m,{command,prefix,text,args})=>{
                
 if(!text) return client.sendMessage(m.from,{text:"What you want to play"},{quoted:m})
@@ -30,7 +30,7 @@ await client.sendMessage(m.from,{
     contextInfo:{
         externalAdReply:{
             title:anu.title,
-            body: "*©Eternity-Team*",
+            body: "*▶𝙷𝚊𝚛𝚛𝚒𝚜𝚘𝚗 𝚆𝚎𝚕𝚕𝚜*",
             thumbnail: await fetchBuffer(anu.thumbnail),
             mediaType:2,
             mediaUrl:anu.url,
